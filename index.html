@@ -67,7 +67,7 @@
   }
   .icon-circ{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;}
   .row{display:flex;gap:14px;align-items:flex-start;}
-  .label-sm{font-size:12px;font-weight:800;color:var(--ink-soft);letter-spacing:.3px;text-transform:uppercase;margin:0 0 2px;}
+  .label-sm{font-size:12.5px;font-weight:800;color:var(--ink-soft);letter-spacing:.3px;text-transform:uppercase;margin:0 0 2px;}
   .label-lg{font-size:16px;font-weight:800;color:var(--navy);line-height:1.28;margin:0;}
   .pain-copy .label-sm,.pain-copy .label-lg{color:var(--red);}
   .benefit-copy{color:var(--green-deep);}
@@ -82,7 +82,7 @@
   @media (prefers-reduced-motion:reduce){.sticky-cta.is-visible{animation:none;}}
   .guarantee-card{display:flex;align-items:flex-start;gap:12px;background:linear-gradient(120deg,#E7F6EC,#fff);border:1px solid #BDE5C8;border-radius:14px;padding:16px;margin-top:12px;}
   .guarantee-card svg{flex:none;margin-top:1px;}
-  .guarantee-card p{margin:0;color:var(--ink-soft);font-size:13px;line-height:1.45;}
+  .guarantee-card p{margin:0;color:var(--ink-soft);font-size:14px;line-height:1.5;}
   .guarantee-card strong{display:block;margin-bottom:3px;color:var(--green-deep);font-size:15px;}
   .check-row{display:flex;gap:10px;align-items:flex-start;margin:0 0 10px;}
   .check-row svg{flex:none;margin-top:2px;}
@@ -95,8 +95,8 @@
   .faq-item{background:#fff;border-radius:12px;box-shadow:0 3px 10px rgba(20,50,40,.07);margin-bottom:10px;overflow:hidden;}
   .faq-q{display:flex;align-items:center;gap:10px;padding:15px 14px;cursor:pointer;font-weight:800;font-size:14px;color:var(--navy);}
   .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
-  .faq-a p{margin:0;padding:0 14px 15px 44px;font-size:13.5px;color:var(--ink-soft);line-height:1.5;}
-  .faq-item.open .faq-a{max-height:220px;}
+  .faq-a p{margin:0;padding:0 14px 15px 44px;font-size:14px;color:var(--ink-soft);line-height:1.55;}
+  .faq-item.open .faq-a{max-height:280px;}
   .faq-item.open .chev{transform:rotate(180deg);}
   .chev{transition:transform .2s ease;flex:none;margin-left:auto;}
   .pack-box{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 14px 28px rgba(15,50,40,.22);}
@@ -131,14 +131,18 @@ fbq('track', 'PageView');
 </div>
 
 <!-- ===== HERO ===== -->
-<img id="hero-image" src="hero-lecturas.webp" fetchpriority="high" decoding="async" alt="Que tu hijx aprenda a leer 10 veces mas rapido jugando y divirtiendose, con solo 10 minutos al dia - Metodo Lecturas Felices" style="display:block;width:100%;height:100vh;height:min(100svh,172vw,880px);object-fit:cover;object-position:50% 20%;">
+<img id="hero-image" src="hero-lecturas.webp" width="1000" height="1328" fetchpriority="high" decoding="async" alt="Que tu hijo o hija aprenda a leer 10 veces mas rapido jugando y divirtiendose, con solo 10 minutos al dia - Metodo Lecturas Felices" style="display:block;width:100%;height:auto;">
 
 <div class="hero-price">
   <p style="margin:0 0 2px;font-size:13px;font-weight:800;color:var(--green-deep);">PACK PREMIUM + 7 BONUS DE REGALO</p>
-  <span class="price-now">$17.999,00 ARS</span>
-  <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el pack</a>
+  <p style="margin:6px 0 12px;line-height:1.1;">
+    <span style="text-decoration:line-through;color:#9AA;font-size:15px;font-weight:800;">$38.000,00 ARS</span>
+    &nbsp;
+    <span style="font-size:28px;font-weight:900;color:var(--navy);">$17.999,00 ARS</span>
+  </p>
+  <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el método</a>
 </div>
-<a id="sticky-cta" class="btn-green sticky-cta" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">🛒 Quiero el pack</a>
+<a id="sticky-cta" class="btn-green sticky-cta" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">🛒 Quiero el método</a>
 
 <!-- ===== PAIN POINTS ===== -->
 <div class="section" style="background:#fff;padding-top:32px;">
@@ -171,10 +175,54 @@ fbq('track', 'PageView');
         <div class="pain-copy"><p class="label-sm">Y lo peor: empieza a pensar</p><p class="label-lg">QUE NO ES CAPAZ</p></div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="card" style="background:linear-gradient(180deg,#FFF6D6,#FFEDA8);padding:20px;margin-top:24px;">
-      <p style="margin:0 0 8px;text-align:center;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:17px;line-height:1.3;">EL PACK DE GRAFISMO FONÉTICO<br>ES LA RESPUESTA</p>
-      <p style="margin:0;text-align:center;color:var(--green-deep);font-weight:700;font-size:13px;line-height:1.5;">EL MÉTODO DIVERTIDO PARA NIÑOS DE 2 A 11 AÑOS QUE COMBINA TRAZOS, SONIDOS Y JUEGOS PARA QUE TU HIJO APRENDA A LEER DE FORMA NATURAL Y SIN PRESIÓN</p>
+<!-- ===== BENEFITS ===== -->
+<div class="section" style="background:linear-gradient(180deg,#fff,var(--mint-a));padding-top:32px;">
+  <div class="container">
+    <h2 class="section-title benefit-title">¿QUÉ VA A LOGRAR<br>TU HIJO?</h2>
+    <div style="display:flex;flex-direction:column;gap:18px;">
+      <div class="row">
+        <div class="icon-circ" style="background:#FFE4EC;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--pink-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-1 1-2 2-2h5v16H6c-1 0-2 1-2 2V5z"/><path d="M20 5c0-1-1-2-2-2h-5v16h5c1 0 2 1 2 2V5z"/><path d="M12 20l1-19 1 19" stroke="none" fill="none"/></svg>
+        </div>
+        <p class="label-lg benefit-copy">Sentirá curiosidad y<br>ganas de leer cada día</p>
+      </div>
+      <div class="row">
+        <div class="icon-circ" style="background:#E9E4FF;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7458D6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h3a2 2 0 1 1 4 0h3a1.5 1.5 0 0 1 1.5 1.5v3a2 2 0 1 1 0 4v3A1.5 1.5 0 0 1 18 17h-3a2 2 0 1 1-4 0H8a1.5 1.5 0 0 1-1.5-1.5v-3a2 2 0 1 0 0-4v-3A1.5 1.5 0 0 1 8 4z"/></svg>
+        </div>
+        <p class="label-lg benefit-copy">Desarrollará su inteligencia,<br>memoria y capacidad intelectual</p>
+      </div>
+      <div class="row">
+        <div class="icon-circ" style="background:#FDECD2;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--orange-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12"/><path d="M6 21h12"/><path d="M7 3c0 5 5 6 5 9s-5 4-5 9"/><path d="M17 3c0 5-5 6-5 9s5 4 5 9"/></svg>
+        </div>
+        <p class="label-lg benefit-copy">Aprenderá con calma,<br>sin frustraciones</p>
+      </div>
+      <div class="row">
+        <div class="icon-circ" style="background:#FFF3D0;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sun-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.5.4.8 1 .9 1.7l.1.5h5.2l.1-.5c.1-.7.4-1.3.9-1.7A6 6 0 0 0 12 3z"/></svg>
+        </div>
+        <p class="label-lg benefit-copy">Volverá a confiar en su mente<br>y en todo lo que es capaz de aprender</p>
+      </div>
+      <div class="row">
+        <div class="icon-circ" style="background:#DDEEFC;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-9.3-8.8C1.3 8 2.6 4.8 5.6 4.1 7.6 3.6 9.6 4.4 12 7c2.4-2.6 4.4-3.4 6.4-2.9 3 .7 4.3 3.9 2.9 7.1C19 15.6 12 20 12 20z"/><rect x="15.5" y="9" width="6" height="9" rx="1.4" fill="#fff" stroke="var(--blue-deep)"/><path d="M17 15.3h3" stroke-width="1.3"/></svg>
+        </div>
+        <p class="label-lg benefit-copy">Pasará menos tiempo en pantalla<br>y estará más conectado con vos</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SOLUCIÓN / RESPUESTA ===== -->
+<div class="section" style="background:linear-gradient(180deg,var(--mint-a),#fff);padding-top:10px;">
+  <div class="container">
+    <div class="card" style="background:linear-gradient(180deg,#FFF6D6,#FFEDA8);padding:20px;">
+      <p style="margin:0 0 8px;text-align:center;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:17px;line-height:1.3;">EL MÉTODO DE GRAFISMO FONÉTICO<br>ES LA RESPUESTA</p>
+      <p style="margin:0;text-align:center;color:var(--green-deep);font-weight:700;font-size:14px;line-height:1.5;">EL MÉTODO DIVERTIDO PARA NIÑOS DE 2 A 11 AÑOS QUE COMBINA TRAZOS, SONIDOS Y JUEGOS PARA QUE TU HIJO APRENDA A LEER DE FORMA NATURAL Y SIN PRESIÓN</p>
     </div>
 
     <div style="display:flex;gap:12px;margin-top:18px;">
@@ -240,45 +288,6 @@ fbq('track', 'PageView');
   </div>
 </div>
 
-<!-- ===== BENEFITS ===== -->
-<div class="section" style="background:linear-gradient(180deg,#fff,var(--mint-a));padding-top:32px;">
-  <div class="container">
-    <h2 class="section-title benefit-title">¿QUÉ VA A LOGRAR<br>TU HIJO?</h2>
-    <div style="display:flex;flex-direction:column;gap:18px;">
-      <div class="row">
-        <div class="icon-circ" style="background:#FFE4EC;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--pink-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-1 1-2 2-2h5v16H6c-1 0-2 1-2 2V5z"/><path d="M20 5c0-1-1-2-2-2h-5v16h5c1 0 2 1 2 2V5z"/><path d="M12 20l1-19 1 19" stroke="none" fill="none"/></svg>
-        </div>
-        <p class="label-lg benefit-copy">Sentirá curiosidad y<br>ganas de leer cada día</p>
-      </div>
-      <div class="row">
-        <div class="icon-circ" style="background:#E9E4FF;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7458D6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h3a2 2 0 1 1 4 0h3a1.5 1.5 0 0 1 1.5 1.5v3a2 2 0 1 1 0 4v3A1.5 1.5 0 0 1 18 17h-3a2 2 0 1 1-4 0H8a1.5 1.5 0 0 1-1.5-1.5v-3a2 2 0 1 0 0-4v-3A1.5 1.5 0 0 1 8 4z"/></svg>
-        </div>
-        <p class="label-lg benefit-copy">Desarrollará su inteligencia,<br>memoria y capacidad intelectual</p>
-      </div>
-      <div class="row">
-        <div class="icon-circ" style="background:#FDECD2;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--orange-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12"/><path d="M6 21h12"/><path d="M7 3c0 5 5 6 5 9s-5 4-5 9"/><path d="M17 3c0 5-5 6-5 9s5 4 5 9"/></svg>
-        </div>
-        <p class="label-lg benefit-copy">Aprenderá con calma,<br>sin frustraciones</p>
-      </div>
-      <div class="row">
-        <div class="icon-circ" style="background:#FFF3D0;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sun-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.5.4.8 1 .9 1.7l.1.5h5.2l.1-.5c.1-.7.4-1.3.9-1.7A6 6 0 0 0 12 3z"/></svg>
-        </div>
-        <p class="label-lg benefit-copy">Volverá a confiar en su mente<br>y en todo lo que es capaz de aprender</p>
-      </div>
-      <div class="row">
-        <div class="icon-circ" style="background:#DDEEFC;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-9.3-8.8C1.3 8 2.6 4.8 5.6 4.1 7.6 3.6 9.6 4.4 12 7c2.4-2.6 4.4-3.4 6.4-2.9 3 .7 4.3 3.9 2.9 7.1C19 15.6 12 20 12 20z"/><rect x="15.5" y="9" width="6" height="9" rx="1.4" fill="#fff" stroke="var(--blue-deep)"/><path d="M17 15.3h3" stroke-width="1.3"/></svg>
-        </div>
-        <p class="label-lg benefit-copy">Pasará menos tiempo en pantalla<br>y estará más conectado con vos</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- ===== PRODUCT / PRICE ===== -->
 <div class="section center" style="background:var(--mint-a);padding:10px 0 26px;">
   <div class="container">
@@ -294,8 +303,17 @@ fbq('track', 'PageView');
       <svg viewBox="0 0 24 24" fill="#FFC531"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg>
       <span style="font-size:12px;color:var(--ink-soft);margin-left:4px;align-self:center;">5/5</span>
     </div>
-    <p style="margin:0 0 12px;"><span style="text-decoration:line-through;color:#9AA;font-size:14px;">$38.000,00 ARS</span> &nbsp; <span style="font-weight:800;font-size:22px;color:var(--navy);">$17.999,00 ARS</span></p>
-    <span class="pill">🔥 Oferta de lanzamiento -50% OFF</span>
+    <div style="max-width:340px;margin:2px auto 0;text-align:left;font-size:13.5px;color:var(--ink-soft);line-height:1.35;">
+      <div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid rgba(23,56,100,.1);"><span>Método Grafismo Fonético · +1500 fichas</span><span style="text-decoration:line-through;white-space:nowrap;">$38.000</span></div>
+      <div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid rgba(23,56,100,.1);"><span>Los 7 bonus de regalo</span><span style="text-decoration:line-through;white-space:nowrap;">$79.999</span></div>
+      <div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid rgba(23,56,100,.1);"><span>Acceso de por vida + actualizaciones</span><span style="color:var(--green-deep);font-weight:800;white-space:nowrap;">incluido</span></div>
+      <div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;"><span>Garantía de 7 días</span><span style="color:var(--green-deep);font-weight:800;white-space:nowrap;">incluida</span></div>
+    </div>
+
+    <p style="margin:12px 0 2px;font-size:13.5px;color:var(--ink-soft);">Todo junto vale <span style="text-decoration:line-through;">$117.999 ARS</span></p>
+    <p style="margin:0 0 3px;"><span style="font-weight:900;font-size:26px;color:var(--navy);">$17.999,00 ARS</span></p>
+    <p style="margin:0 0 12px;font-weight:800;font-size:13px;color:var(--green-deep);">Un solo pago · te ahorrás $100.000</p>
+    <span class="pill">🔥 Sin suscripción, sin cargos mensuales</span>
   </div>
 </div>
 
@@ -303,15 +321,13 @@ fbq('track', 'PageView');
 <div class="section" style="padding-top:22px;">
   <div class="container">
     <div class="card" style="background:linear-gradient(180deg,#123B24,#0C2A19);padding:20px;color:#fff;">
-      <p style="margin:0 0 6px;text-align:center;font-family:'Baloo 2';font-weight:800;font-size:16px;">OFERTA DE LANZAMIENTO</p>
-      <p id="timer-label" style="margin:0 0 16px;text-align:center;font-size:11.5px;color:rgba(255,255,255,.65);line-height:1.5;">Precio promocional por el lanzamiento. Cuando termine, el pack vuelve a <u>$38.000</u>.</p>
-      <p id="timer" style="margin:0;text-align:center;font-family:'Baloo 2';font-weight:700;font-size:30px;letter-spacing:2px;">47 : 59 : 58</p>
-      <p style="margin:0 0 16px;text-align:center;font-size:10px;color:rgba(255,255,255,.55);letter-spacing:3px;">HORAS &nbsp;&nbsp;&nbsp; MIN &nbsp;&nbsp;&nbsp; SEG</p>
-      <p style="margin:0 0 14px;text-align:center;font-weight:800;color:#FFD43B;font-size:13px;">⚡ -50% OFF solo por el lanzamiento</p>
+      <p id="timer-label" style="margin:0 0 10px;text-align:center;font-family:'Baloo 2';font-weight:800;font-size:15px;">El precio vuelve a $38.000 en:</p>
+      <p id="timer" style="margin:0;text-align:center;font-family:'Baloo 2';font-weight:700;font-size:32px;letter-spacing:2px;">47 : 59 : 58</p>
+      <p style="margin:0 0 18px;text-align:center;font-size:10px;color:rgba(255,255,255,.55);letter-spacing:3px;">HORAS &nbsp;&nbsp;&nbsp; MIN &nbsp;&nbsp;&nbsp; SEG</p>
 
-      <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Agregar al carrito</a>
+      <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el método &raquo; $17.999</a>
 
-      <p style="margin:14px 0 8px;text-align:center;font-size:11px;color:rgba(255,255,255,.55);">🔒 Pago seguro garantizado</p>
+      <p style="margin:14px 0 8px;text-align:center;font-size:11px;color:rgba(255,255,255,.6);">🔒 Pago seguro &nbsp;·&nbsp; ⚡ Acceso al instante &nbsp;·&nbsp; 🛡️ Garantía 7 días</p>
       <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
         <span class="pay-badge" style="color:#1A1F71;">VISA</span>
         <span class="pay-badge"><svg width="26" height="16" viewBox="0 0 26 16"><circle cx="10" cy="8" r="7" fill="#EB001B"/><circle cx="16" cy="8" r="7" fill="#F79E1B" opacity=".85"/></svg></span>
@@ -327,8 +343,8 @@ fbq('track', 'PageView');
     <div class="card" style="margin-top:14px;background:linear-gradient(120deg,#FFEDA8,#C9F0DC);padding:16px;display:flex;align-items:center;gap:12px;">
       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--orange-deep)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-8"/><rect x="2" y="7" width="20" height="5" rx="1"/><line x1="12" y1="7" x2="12" y2="21"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C10 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C14 2 12 7 12 7z"/></svg>
       <div>
-        <p style="margin:0;font-weight:800;color:var(--navy);font-size:14px;">TENEMOS MAS PARA VOS</p>
-        <p style="margin:0;font-weight:800;color:var(--orange-deep);font-size:15px;">7 BONUS DE REGALO</p>
+        <p style="margin:0;font-weight:800;color:var(--navy);font-size:14px;">7 bonus de regalo incluidos</p>
+        <p style="margin:0;font-weight:800;color:var(--orange-deep);font-size:15px;">Valen $79.999 · hoy $0</p>
       </div>
     </div>
   </div>
@@ -342,56 +358,63 @@ fbq('track', 'PageView');
       <div style="width:250px;height:266px;margin:0 auto 14px;border-radius:16px;background:#fff;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:5px;">
         <img src="bonus1-megakit.jpg" alt="Bonus 1: Mega Kit Escolar" loading="lazy" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;">
       </div>
-      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:19px;">BONUS 1</p>
-      <p style="margin:0;font-size:15px;color:var(--ink-soft);line-height:1.5;max-width:340px;margin-inline:auto;">Más de 1000 fichas listas para imprimir que fortalecen lectura, atención, lenguaje y lógica desde los 2 a 11 años.</p>
+      <p style="margin:0 0 2px;font-family:'Baloo 2';font-weight:800;color:var(--orange-deep);font-size:12px;letter-spacing:.6px;">BONUS 1</p>
+      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:20px;line-height:1.15;">Mega Kit Escolar</p>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.5;max-width:320px;margin-inline:auto;">+1000 fichas para imprimir: lectura, atención, lenguaje y lógica. De 2 a 11 años.</p>
     </div>
 
     <div class="center">
       <div style="width:250px;height:266px;margin:0 auto 14px;border-radius:16px;background:#fff;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:5px;">
         <img src="bonus2-calma.jpg" alt="Bonus 2: Ninos en Calma" loading="lazy" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;">
       </div>
-      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:19px;">BONUS 2</p>
-      <p style="margin:0;font-size:15px;color:var(--ink-soft);line-height:1.5;max-width:340px;margin-inline:auto;">Rutinas y juegos que reducen berrinches, mejoran la atención y ayudan a niños con mucha energía o TDAH.</p>
+      <p style="margin:0 0 2px;font-family:'Baloo 2';font-weight:800;color:var(--orange-deep);font-size:12px;letter-spacing:.6px;">BONUS 2</p>
+      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:20px;line-height:1.15;">Niños en Calma</p>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.5;max-width:320px;margin-inline:auto;">Rutinas y juegos que bajan los berrinches y mejoran la atención. Va bien con TDAH.</p>
     </div>
 
     <div class="center">
       <div style="width:250px;height:266px;margin:0 auto 14px;border-radius:16px;background:#fff;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:5px;">
         <img src="bonus3-escribir.jpg" alt="Bonus 3: Escribir bonito, crecer seguro" loading="lazy" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;">
       </div>
-      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:19px;">BONUS 3</p>
-      <p style="margin:0;font-size:15px;color:var(--ink-soft);line-height:1.5;max-width:340px;margin-inline:auto;">Trazos progresivos para mejorar la motricidad fina, el control del lápiz y la escritura segura.</p>
+      <p style="margin:0 0 2px;font-family:'Baloo 2';font-weight:800;color:var(--orange-deep);font-size:12px;letter-spacing:.6px;">BONUS 3</p>
+      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:20px;line-height:1.15;">Escribir Bonito, Crecer Seguro</p>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.5;max-width:320px;margin-inline:auto;">Trazos de menos a más para mejorar el pulso, el agarre del lápiz y la letra.</p>
     </div>
 
     <div class="center">
       <div style="width:250px;height:266px;margin:0 auto 14px;border-radius:16px;background:#fff;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:5px;">
         <img src="bonus4-mecanicos.jpg" alt="Bonus 4: Pequenos Mecanicos" loading="lazy" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;">
       </div>
-      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:19px;">BONUS 4</p>
-      <p style="margin:0;font-size:15px;color:var(--ink-soft);line-height:1.5;max-width:340px;margin-inline:auto;">Descubrí cómo funciona un auto por dentro, explicado fácil. Con juegos, coloreo y desafíos.</p>
+      <p style="margin:0 0 2px;font-family:'Baloo 2';font-weight:800;color:var(--orange-deep);font-size:12px;letter-spacing:.6px;">BONUS 4</p>
+      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:20px;line-height:1.15;">Pequeños Mecánicos</p>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.5;max-width:320px;margin-inline:auto;">Cómo funciona un auto por dentro, contado fácil. Con juegos y para colorear.</p>
     </div>
 
     <div class="center">
       <div style="width:250px;height:266px;margin:0 auto 14px;border-radius:16px;background:#fff;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:5px;">
         <img src="bonus5-alfabeto.jpg" alt="Bonus 5: Super Alfabeto" loading="lazy" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;">
       </div>
-      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:19px;">BONUS 5</p>
-      <p style="margin:0;font-size:15px;color:var(--ink-soft);line-height:1.5;max-width:340px;margin-inline:auto;">Actividades y juegos para dominar letras, memoria visual y vocabulario. Incluye Kit de Lenguaje.</p>
+      <p style="margin:0 0 2px;font-family:'Baloo 2';font-weight:800;color:var(--orange-deep);font-size:12px;letter-spacing:.6px;">BONUS 5</p>
+      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:20px;line-height:1.15;">Súper Alfabeto + Kit de Lenguaje</p>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.5;max-width:320px;margin-inline:auto;">Juegos para dominar las letras, la memoria visual y sumar vocabulario.</p>
     </div>
 
     <div class="center">
       <div style="width:250px;height:266px;margin:0 auto 14px;border-radius:16px;background:#fff;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:5px;">
         <img src="bonus6-cuentos.jpg" alt="Bonus 6: Cuentos para dormir felices" loading="lazy" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;">
       </div>
-      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:19px;">BONUS 6</p>
-      <p style="margin:0;font-size:15px;color:var(--ink-soft);line-height:1.5;max-width:340px;margin-inline:auto;">Más de 40 cuentos que hacen que pida ir a dormir. Ilustrados, mágicos y llenos de valores.</p>
+      <p style="margin:0 0 2px;font-family:'Baloo 2';font-weight:800;color:var(--orange-deep);font-size:12px;letter-spacing:.6px;">BONUS 6</p>
+      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:20px;line-height:1.15;">40 Cuentos para Dormir</p>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.5;max-width:320px;margin-inline:auto;">Ilustrados y con valores. Le dan ganas de que llegue la hora de dormir.</p>
     </div>
 
     <div class="center">
       <div style="width:250px;height:266px;margin:0 auto 14px;border-radius:16px;background:#fff;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:5px;">
         <img src="bonus7-guia.jpg" alt="Bonus 7: La guia para madres" loading="lazy" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;">
       </div>
-      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:19px;">BONUS 7</p>
-      <p style="margin:0;font-size:15px;color:var(--ink-soft);line-height:1.5;max-width:340px;margin-inline:auto;">Planes semanales para mejorar atención, conducta y lenguaje en casa. Guía para madres y padres.</p>
+      <p style="margin:0 0 2px;font-family:'Baloo 2';font-weight:800;color:var(--orange-deep);font-size:12px;letter-spacing:.6px;">BONUS 7</p>
+      <p style="margin:0 0 4px;font-family:'Baloo 2';font-weight:800;color:var(--green-deep);font-size:20px;line-height:1.15;">Guía para Madres y Padres</p>
+      <p style="margin:0;font-size:14.5px;color:var(--ink-soft);line-height:1.5;max-width:320px;margin-inline:auto;">Planes de una semana para trabajar atención, conducta y lenguaje en casa.</p>
     </div>
 
   </div>
@@ -408,12 +431,12 @@ fbq('track', 'PageView');
 
     <p style="margin:0 0 2px;font-weight:800;color:var(--ink-soft);font-size:13px;letter-spacing:.3px;">VALOR TOTAL 7 BONUS</p>
     <p style="margin:0 0 4px;font-size:20px;color:#B5433C;text-decoration:line-through;">$79.999</p>
-    <p style="margin:0;font-weight:800;color:var(--green-deep);font-size:15px;">PRECIO ESPECIAL DE LANZAMIENTO</p>
-    <p style="margin:0 0 16px;font-family:'Baloo 2';font-weight:800;color:var(--red);font-size:44px;">GRATIS</p>
+    <p style="margin:0;font-weight:800;color:var(--green-deep);font-size:15px;">CON TU COMPRA DE HOY</p>
+    <p style="margin:0 0 16px;font-family:'Baloo 2';font-weight:800;color:var(--red);font-size:40px;">GRATIS</p>
 
     <p style="margin:0 0 12px;font-size:12px;color:var(--ink-soft);">📧 Acceso inmediato a tu mail</p>
 
-    <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">¡COMPRAR MI SUPER KIT AHORA!</a>
+    <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el método</a>
 
     <p style="margin:14px 0 8px;font-size:11px;color:var(--ink-soft);">🔒 Pago seguro garantizado</p>
     <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
@@ -427,7 +450,7 @@ fbq('track', 'PageView');
 <!-- ===== REVIEWS ===== -->
 <div class="section" style="padding-top:30px;">
   <div class="container">
-    <h2 class="section-title" style="margin-bottom:6px;">Opiniones de familias</h2>
+    <h2 class="section-title" style="margin-bottom:6px;">Lo que cuentan las familias</h2>
     <div style="display:flex;justify-content:center;align-items:center;gap:6px;margin-bottom:18px;">
       <div class="stars" style="display:flex;gap:1px;">
         <svg viewBox="0 0 24 24" fill="#FFC531"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg>
@@ -436,65 +459,45 @@ fbq('track', 'PageView');
         <svg viewBox="0 0 24 24" fill="#FFC531"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg>
         <svg viewBox="0 0 24 24" fill="#FFC531"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg>
       </div>
-      <span style="font-size:13px;color:var(--ink-soft);font-weight:700;">11 Reseñas ▾</span>
+      <span style="font-size:13px;color:var(--ink-soft);font-weight:700;">7 reseñas verificadas</span>
     </div>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
       <!-- generated review cards -->
       <div class="rev-card">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#FF8A3D;">PD</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Patricia D.</p><span class="verified">● Verificada</span></div></div>
         <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Mi hijo es un torbellino, de las pocas veces que se quedó concentrado haciendo algo. Este es el cuarto día y cada día lo veo más enganchado.</p>
+        <p style="margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.55;">Mi hijo es un torbellino, de las pocas veces que se quedó concentrado haciendo algo. Este es el cuarto día y cada día lo veo más enganchado.</p>
       </div>
       <div class="rev-card">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#7458D6;">ZF</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Zulma F.</p><span class="verified">● Verificada</span></div></div>
         <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Pensé que los bonus eran algo extra... pero no. Son súper completos 😍. ¡Muchas gracias!!!</p>
-      </div>
-      <div class="rev-card">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#33A853;">FC</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Fabiana C.</p><span class="verified">● Verificada</span></div></div>
-        <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Súper completo, la cantidad me sorprendió. Pensé que era un solo libro, ¡son un montón!</p>
+        <p style="margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.55;">Pensé que los bonus eran algo extra... pero no. Son súper completos 😍. ¡Muchas gracias!!!</p>
       </div>
       <div class="rev-card">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#FF4F9A;">RS</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Romina S.</p><span class="verified">● Verificada</span></div></div>
         <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Mi hijo tiene TDAH y nunca lograba mantenerse en una actividad más de dos minutos. Me sorprendió verlo tan concentrado y tranquilo, muy feliz ✨</p>
-      </div>
-      <div class="rev-card">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#2FA8E0;">CS</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Camila S.</p><span class="verified">● Verificada</span></div></div>
-        <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">¡Es increíble como algo tan simple puede marcar tanta diferencia! Estoy muy satisfecha con mi compra 🔥</p>
+        <p style="margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.55;">Mi hijo tiene TDAH y nunca lograba mantenerse en una actividad más de dos minutos. Me sorprendió verlo tan concentrado y tranquilo, muy feliz ✨</p>
       </div>
       <div class="rev-card">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#E86A1C;">MD</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Mariela D.</p><span class="verified">● Verificada</span></div></div>
         <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Me sorprendió que le sirve tanto a mi nene de 2 años como al de 6. ¡Por fin algo que funciona para ambos! 😍✨</p>
+        <p style="margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.55;">Me sorprendió que le sirve tanto a mi nene de 2 años como al de 6. ¡Por fin algo que funciona para ambos! 😍✨</p>
       </div>
       <div class="rev-card">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#1E76B0;">PP</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Pablo P.</p><span class="verified">● Verificada</span></div></div>
         <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Nunca fui bueno para explicarle las letras, pero con esto hasta yo aprendí. ¡Es muy gratificante verlo leer sus primeras palabras!</p>
-      </div>
-      <div class="rev-card">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#B14FE0;">AR</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Agustina R.</p><span class="verified">● Verificada</span></div></div>
-        <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Mi hija ahora entiende cosas que ni yo sabía explicarle. Encantada con los mini desafíos.</p>
+        <p style="margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.55;">Nunca fui bueno para explicarle las letras, pero con esto hasta yo aprendí. ¡Es muy gratificante verlo leer sus primeras palabras!</p>
       </div>
       <div class="rev-card">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#E8317E;">PF</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Paula F.</p><span class="verified">● Verificada</span></div></div>
         <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Empezamos hace 5 días y ya repite varios sonidos sola, no pensé que iba a ser tan fácil ❤️.</p>
-      </div>
-      <div class="rev-card">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#26A84A;">GH</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Graciela H.</p><span class="verified">● Verificada</span></div></div>
-        <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Muchas gracias, recibí el material. Está bonito 😍 y será de mucha ayuda con mi nena 🥰.</p>
+        <p style="margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.55;">Empezamos hace 5 días y ya repite varios sonidos sola, no pensé que iba a ser tan fácil ❤️.</p>
       </div>
       <div class="rev-card" style="grid-column:1/-1;">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><div class="avatar" style="background:#FF4F9A;">AM</div><div><p style="margin:0;font-weight:800;font-size:12.5px;color:var(--navy);">Andrea M.</p><span class="verified">● Verificada</span></div></div>
         <div class="stars" style="display:flex;gap:1px;margin-bottom:6px;"><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg><svg viewBox="0 0 24 24" fill="#FFC531" width="12" height="12"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8L6 21l1.6-7L2.2 9.3l7.1-.7z"/></svg></div>
-        <p style="margin:0;font-size:11.5px;color:var(--ink-soft);line-height:1.45;">Quería dejarles gracias, mi hija está obsesionada con grafismos fonéticos 🤩, hasta juega a ser maestra y enseñar las letras.</p>
+        <p style="margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.55;">Quería dejarles gracias, mi hija está obsesionada con grafismos fonéticos 🤩, hasta juega a ser maestra y enseñar las letras.</p>
       </div>
     </div>
   </div>
@@ -535,19 +538,53 @@ fbq('track', 'PageView');
     <div class="faq-item" id="faq4">
       <div class="faq-q" onclick="document.getElementById('faq4').classList.toggle('open')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
-        <span>¿Funciona también para niños que ya van bien en la escuela?</span>
+        <span>¿Sirve si mi hijo ya va a la escuela o necesita un refuerzo?</span>
         <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--ink-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
       </div>
-      <div class="faq-a"><p>Sí. Tiene distintos niveles de dificultad, así que también sirve para reforzar y llevar la lectura de tu hijo un paso más allá.</p></div>
+      <div class="faq-a"><p>Sí. Tiene varios niveles, así que sirve tanto para empezar de cero como para reforzar y que agarre confianza con la lectura.</p></div>
     </div>
 
     <div class="faq-item" id="faq5">
       <div class="faq-q" onclick="document.getElementById('faq5').classList.toggle('open')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
-        <span>¿Sirve si mi hijo ya va a la escuela o necesita apoyo extra?</span>
+        <span>¿Sirve si no soy maestra?</span>
         <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--ink-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
       </div>
-      <div class="faq-a"><p>Sí, funciona como acompañamiento en casa tanto si va bien en la escuela como si necesita un refuerzo extra para agarrar confianza.</p></div>
+      <div class="faq-a"><p>Sí. Cada ficha te dice qué mostrarle y qué decirle, en orden. Si sabés leer, podés usarlo.</p></div>
+    </div>
+
+    <div class="faq-item" id="faq6">
+      <div class="faq-q" onclick="document.getElementById('faq6').classList.toggle('open')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
+        <span>¿Es un pago único?</span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--ink-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="faq-a"><p>Sí. Pagás una vez y es tuyo para siempre, sin suscripción ni cargos después. Lo usás con todos tus hijos.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CIERRE ===== -->
+<div class="section" style="padding:6px 0 40px;">
+  <div class="container">
+    <div class="card" style="background:linear-gradient(180deg,#123B24,#0C2A19);padding:22px;color:#fff;">
+      <p style="margin:0 0 14px;text-align:center;font-family:'Baloo 2';font-weight:800;font-size:18px;">Entonces, esto te llevás hoy</p>
+      <div style="max-width:300px;margin:0 auto 16px;font-size:13.5px;line-height:1.9;">
+        <div>&#10003;&nbsp; Método Grafismo Fonético &middot; +1500 fichas</div>
+        <div>&#10003;&nbsp; Los 7 bonus de regalo <span style="color:rgba(255,255,255,.6);">($79.999)</span></div>
+        <div>&#10003;&nbsp; Acceso de por vida + actualizaciones</div>
+        <div>&#10003;&nbsp; Garantía de 7 días</div>
+      </div>
+      <p style="margin:0 0 4px;text-align:center;font-weight:800;font-size:15px;">
+        <span style="text-decoration:line-through;color:rgba(255,255,255,.5);font-size:13px;">$117.999 ARS</span>
+        &nbsp;
+        <span style="color:#FFD43B;font-size:22px;">$17.999,00 ARS</span>
+      </p>
+      <p style="margin:0 0 16px;text-align:center;font-size:12px;color:rgba(255,255,255,.6);">Un solo pago. Te llega al mail al instante.</p>
+
+      <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el método &raquo; $17.999</a>
+
+      <p style="margin:16px 0 0;font-size:12.5px;color:rgba(255,255,255,.7);line-height:1.6;"><strong style="color:#fff;">P.D.:</strong> el riesgo lo pongo yo. Probalo 7 días y si no es para ustedes te devuelvo el 100%, sin preguntas. Si esperás, cuando cierre el lanzamiento pagás $38.000.</p>
     </div>
   </div>
 </div>
@@ -582,7 +619,7 @@ fbq('track', 'PageView');
     if (diff <= 0) {
       if (el) el.textContent = '00 : 00 : 00';
       if (bar) bar.textContent = 'ÚLTIMAS HORAS';
-      if (lbl) lbl.textContent = 'Últimas horas de la oferta de lanzamiento. Después el pack vuelve a $38.000.';
+      if (lbl) lbl.textContent = 'Últimas horas de la oferta de lanzamiento. Después el método vuelve a $38.000.';
       return;
     }
     var h = Math.floor(diff / 3600000),
