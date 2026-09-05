@@ -51,13 +51,14 @@
   .eyebrow{font-size:15px;font-weight:800;color:var(--orange-deep);text-align:center;letter-spacing:.2px;margin:0 0 2px;}
   .headline{font-size:32px;line-height:1.08;font-weight:800;color:var(--red);text-align:center;margin:0 0 10px;text-wrap:pretty;}
   .subhead{font-size:16px;font-weight:800;color:var(--green-deep);text-align:center;line-height:1.4;margin:0;}
-  .section-title{font-size:23px;font-weight:800;color:var(--green-deep);text-align:center;line-height:1.25;margin:0 0 18px;text-wrap:pretty;}
+  .section-title{font-size:25px;font-weight:800;color:var(--green-deep);text-align:center;line-height:1.25;margin:0 0 18px;text-wrap:pretty;}
   .card{background:#fff;border-radius:18px;box-shadow:var(--shadow);}
   .btn-green{
     display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
     background:linear-gradient(180deg,#3FC463,#26A84A);color:#fff;font-family:'Baloo 2';
     font-weight:700;font-size:17px;border:none;border-radius:14px;padding:16px 14px;
-    box-shadow:0 6px 0 #1C8339, 0 10px 18px rgba(30,120,60,.25);cursor:pointer;letter-spacing:.2px;
+    box-shadow:0 6px 0 #1C8339, 0 10px 18px rgba(30,120,60,.25);cursor:pointer;letter-spacing:.4px;
+    text-transform:uppercase;
   }
   .btn-green:active{transform:translateY(3px);box-shadow:0 3px 0 #1C8339,0 6px 12px rgba(30,120,60,.2);}
   .btn-outline{
@@ -68,9 +69,11 @@
   .icon-circ{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;}
   .row{display:flex;gap:14px;align-items:flex-start;}
   .label-sm{font-size:12.5px;font-weight:800;color:var(--ink-soft);letter-spacing:.3px;text-transform:uppercase;margin:0 0 2px;}
-  .label-lg{font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;margin:0;}
-  .pain-copy .label-sm,.pain-copy .label-lg{color:var(--red);}
-  .benefit-copy{color:var(--green-deep);}
+  .label-lg{font-size:18px;font-weight:800;color:var(--navy);line-height:1.4;margin:0;}
+  .pain-copy .label-sm{color:var(--red);}
+  .pain-copy .label-lg,.benefit-copy{color:var(--ink);font-weight:600;}
+  .pain-copy .label-lg b{color:var(--red);font-weight:800;}
+  .benefit-copy b{color:var(--green-deep);font-weight:800;}
   .benefit-title{color:var(--green-deep);}
   .hero-price{background:var(--cream);padding:18px 20px 22px;text-align:center;border-bottom:1px solid rgba(23,56,100,.08);}
   .hero-price .price-now{display:block;margin:2px 0 10px;font-size:28px;font-weight:900;color:var(--navy);}
@@ -140,9 +143,9 @@ fbq('track', 'PageView');
     &nbsp;
     <span style="font-size:28px;font-weight:900;color:var(--navy);">$17.999,00 ARS</span>
   </p>
-  <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el método ahora</a>
+  <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">¡Quiero el método ahora!</a>
 </div>
-<a id="sticky-cta" class="btn-green sticky-cta" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">🛒 Quiero el método</a>
+<a id="sticky-cta" class="btn-green sticky-cta" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">🛒 ¡Quiero el método!</a>
 
 <!-- ===== PAIN POINTS ===== -->
 <div id="s-dolores" class="section" style="background:#fff;">
@@ -154,31 +157,31 @@ fbq('track', 'PageView');
         <div class="icon-circ" style="background:#FFEBE7;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </div>
-        <div class="pain-copy"><p class="label-lg">Se frustra, se enoja y cierra el cuaderno de un golpe.</p></div>
+        <div class="pain-copy"><p class="label-lg">Se frustra, se enoja y <b>cierra el cuaderno de un golpe</b>.</p></div>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#FFEBE7;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </div>
-        <div class="pain-copy"><p class="label-lg">Los compañeritos ya leen y él se empieza a creer «malo para leer».</p></div>
+        <div class="pain-copy"><p class="label-lg">Los compañeritos ya leen y él se empieza a creer <b>«malo para leer»</b>.</p></div>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#FFEBE7;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </div>
-        <div class="pain-copy"><p class="label-lg">Probaste tarjetas, apps y videos, y nada le dura más de tres días.</p></div>
+        <div class="pain-copy"><p class="label-lg">Probaste tarjetas, apps y videos, y <b>nada le dura más de tres días</b>.</p></div>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#FFEBE7;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </div>
-        <div class="pain-copy"><p class="label-lg">Vos no sos maestra y no sabés por dónde empezar.</p></div>
+        <div class="pain-copy"><p class="label-lg">Vos no sos maestra y <b>no sabés por dónde empezar</b>.</p></div>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:#FFEBE7;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </div>
-        <div class="pain-copy"><p class="label-lg">Ya reconoce letras pero no lee solo, y tenés miedo de que se quede atrás.</p></div>
+        <div class="pain-copy"><p class="label-lg">Ya reconoce letras pero <b>no lee solo</b>, y tenés miedo de que <b>se quede atrás</b>.</p></div>
       </div>
     </div>
 
@@ -186,7 +189,7 @@ fbq('track', 'PageView');
       <div class="icon-circ" style="background:#fff;">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
       </div>
-      <p class="label-lg" style="color:var(--green-deep);">Y querés que aprenda tranquilo, jugando, 10 minutos por día.</p>
+      <p class="label-lg benefit-copy">Y querés que aprenda <b>tranquilo, jugando, 10 minutos por día</b>.</p>
     </div>
   </div>
 </div>
@@ -200,31 +203,31 @@ fbq('track', 'PageView');
         <div class="icon-circ" style="background:var(--green-pale);">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
         </div>
-        <p class="label-lg benefit-copy">Se sienta a leer sin que se lo pidas dos veces. Y no llora.</p>
+        <p class="label-lg benefit-copy">Se sienta a leer <b>sin que se lo pidas dos veces</b>. Y <b>no llora</b>.</p>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:var(--green-pale);">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
         </div>
-        <p class="label-lg benefit-copy">Reconoce los sonidos y arma sílabas que antes no podía.</p>
+        <p class="label-lg benefit-copy">Reconoce los sonidos y <b>arma sílabas que antes no podía</b>.</p>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:var(--green-pale);">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
         </div>
-        <p class="label-lg benefit-copy">Lee sus primeras palabras solo y se pone re contento.</p>
+        <p class="label-lg benefit-copy"><b>Lee sus primeras palabras solo</b> y se pone re contento.</p>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:var(--green-pale);">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
         </div>
-        <p class="label-lg benefit-copy">Deja de decir que es «malo para leer». Se anima con todo.</p>
+        <p class="label-lg benefit-copy"><b>Deja de decir que es «malo para leer»</b>. Se anima con todo.</p>
       </div>
       <div class="row">
         <div class="icon-circ" style="background:var(--green-pale);">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-deep)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>
         </div>
-        <p class="label-lg benefit-copy">Vos dejás de pelear con la tarea y de gastar en cosas que no le sirven.</p>
+        <p class="label-lg benefit-copy">Vos <b>dejás de pelear con la tarea</b> y de gastar en cosas que no le sirven.</p>
       </div>
     </div>
   </div>
@@ -261,7 +264,7 @@ fbq('track', 'PageView');
     </div>
     <p style="margin:18px 0 0;text-align:center;font-size:13.5px;font-weight:800;color:var(--green-deep);line-height:1.5;">Sirve con o sin dificultades de atención. Funciona también con TDAH o autismo.</p>
 
-    <a class="btn-green" style="text-decoration:none;margin-top:24px;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el método &raquo; $17.999</a>
+    <a class="btn-green" style="text-decoration:none;margin-top:24px;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">¡Quiero el método por $17.999!</a>
     <p style="margin:8px 0 0;text-align:center;font-size:12px;color:var(--ink-soft);">Empezá hoy. 10 minutos por día.</p>
   </div>
 </div>
@@ -328,7 +331,7 @@ fbq('track', 'PageView');
       <p id="timer" style="margin:0;text-align:center;font-family:'Baloo 2';font-weight:700;font-size:34px;letter-spacing:2px;color:#FFD43B;">52 : 00</p>
       <p style="margin:0 0 18px;text-align:center;font-size:10px;color:rgba(255,255,255,.55);letter-spacing:3px;">MINUTOS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SEGUNDOS</p>
 
-      <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el método &raquo; $17.999</a>
+      <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">¡Quiero el método por $17.999!</a>
 
       <p style="margin:14px 0 8px;text-align:center;font-size:11px;color:rgba(255,255,255,.6);">🔒 Pago seguro &nbsp;·&nbsp; ⚡ Acceso al instante &nbsp;·&nbsp; 🛡️ Garantía 7 días</p>
       <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
@@ -437,7 +440,7 @@ fbq('track', 'PageView');
 
     <p style="margin:0 0 14px;font-weight:800;color:var(--navy);font-size:15px;line-height:1.5;">Los 7 bonus (<s style="color:var(--ink-soft);font-weight:400;">$79.999</s>) van incluidos, sin pagar nada más.</p>
 
-    <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el método &raquo; $17.999</a>
+    <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">¡Quiero el método por $17.999!</a>
 
     <p style="margin:12px 0 0;font-size:11px;color:var(--ink-soft);">🔒 Pago seguro · Acceso al instante</p>
   </div>
@@ -578,7 +581,7 @@ fbq('track', 'PageView');
       </p>
       <p style="margin:0 0 16px;text-align:center;font-size:12px;color:rgba(255,255,255,.6);">Un solo pago. Te llega al mail al instante.</p>
 
-      <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">Quiero el método &raquo; $17.999</a>
+      <a class="btn-green" style="text-decoration:none;" href="https://infancias-felices.impultienda.ar/" onclick="if(window.fbq)fbq('track','AddToCart');">¡Quiero el método por $17.999!</a>
 
       <p style="margin:16px 0 0;font-size:12.5px;color:rgba(255,255,255,.7);line-height:1.6;"><strong style="color:#fff;">P.D.:</strong> el riesgo lo pongo yo. Probalo 7 días y si no es para ustedes te devuelvo el 100%, sin preguntas. Si esperás, cuando cierre el lanzamiento pagás $38.000.</p>
     </div>
